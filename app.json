@@ -20,6 +20,7 @@
             "description": "get a Heroku API key from http://dashboard.heroku.com/account",
             "required": false}
     },
+    "stack": "container",
     "buildpacks": [
         {"url": "heroku/python"}
     ]
