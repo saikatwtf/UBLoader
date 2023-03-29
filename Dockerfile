@@ -6,12 +6,15 @@ WORKDIR /app/
 
 RUN apt -qq update
 RUN apt -qq install -y --no-install-recommends \
-    curl \
-    git \
-    gnupg2 \
-    unzip \
-    wget \
-    ffmpeg
+    curl git pv jq gnupg2 unzip wget ffmpeg \
+    mediainfo aria2 p7zip-full unrar-free
+
+# add mkvtoolnix
+RUN wget -q -O - https://mkvtoolnix.download/gpg-pub-moritzbunkus.txt | apt-key add - && \
+    wget -qO - https://ftp-master.debian.org/keys/archive-key-10.asc | apt-key add -
+RUN sh -c 'echo "deb https://mkvtoolnix.download/debian/ buster main" >> /etc/apt/sources.list.d/bunkus.org.list' && \
+    sh -c 'echo deb http://deb.debian.org/debian buster main contrib non-free | tee -a /etc/apt/sources.list'
+RUN wget -O /usr/share/keyrings/gpg-pub-moritzbunkus.gpg https://mkvtoolnix.download/gpg-pub-moritzbunkus.gpg && apt update && apt install mkvtoolnix mkvtoolnix-gui -y
 
 # install chrome
 RUN mkdir -p /tmp/ && \
