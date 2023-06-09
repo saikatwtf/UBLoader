@@ -7,7 +7,7 @@ WORKDIR /app/
 RUN apt -qq update
 RUN apt -qq install -y --no-install-recommends \
     curl git pv jq gnupg2 unzip wget ffmpeg \
-    mediainfo aria2 p7zip-full unrar-free
+    mediainfo mp4decrypt aria2 p7zip-full unrar-free
 
 # add mkvtoolnix
 RUN wget -q -O - https://mkvtoolnix.download/gpg-pub-moritzbunkus.txt | apt-key add - && \
