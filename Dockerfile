@@ -60,6 +60,7 @@ COPY . .
 
 # install dependencies
 RUN pip install -r requirements.txt
+RUN pip install -U --force-reinstall pyrogram
 
 # command to run on container start
 CMD [ "bash", "./run" ]
