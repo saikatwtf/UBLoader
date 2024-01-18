@@ -3,4 +3,4 @@ httpcore==0.17.2
 gitpython
 motor
 python-dotenv
-pyrofork
+Pyrogram==2.0.38
