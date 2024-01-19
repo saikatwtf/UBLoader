@@ -3,4 +3,4 @@ httpcore==0.17.2
 gitpython
 motor
 python-dotenv
-pyrogram>=2.0.106
+git+https://github.com/MKN-BOTZ/pyrogram
