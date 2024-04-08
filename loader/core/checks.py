@@ -147,8 +147,8 @@ def _vars() -> None:
         error("Need both HEROKU_API_KEY and HEROKU_APP_NAME vars !")
 
     if h_api and h_app:
-        if len(h_api) != 36 or len(h_api.split('-')) != 5:
-            error(f"Invalid HEROKU_API_KEY ({h_api}) !")
+        # if len(h_api) != 36 or len(h_api.split('-')) != 5:
+        #     error(f"Invalid HEROKU_API_KEY ({h_api}) !")
 
         headers = {
             'Accept': "application/vnd.heroku+json; version=3",
