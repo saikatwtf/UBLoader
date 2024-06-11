@@ -1,6 +1,11 @@
 dnspython==2.3.0
 httpcore==0.17.2
-gitpython
-motor
-python-dotenv
-pyrogram==2.0.106
+gitpython==3.1.26
+motor==3.3.2 # 2.5.1
+python-dotenv==0.19.2
+# pyrogram==2.0.106
+https://github.com/TelegramPlayGround/pyrogram/archive/ffbce0c.zip
+
+
+
+
