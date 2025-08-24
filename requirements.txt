@@ -6,6 +6,9 @@ python-dotenv
 aiofiles
 pyrogram==2.0.106
 # https://github.com/TelegramPlayGround/pyrogram/archive/ffbce0c.zip
+heroku3
+pillow
+sgmllib3k
 
 
 
