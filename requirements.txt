@@ -7,7 +7,7 @@ aiofiles
 pyrogram==2.0.106
 # https://github.com/TelegramPlayGround/pyrogram/archive/ffbce0c.zip
 heroku3
-pillow
+pillow==10.2.0
 sgmllib3k
 tgcrypto
 # Extra deps from plugin errors
