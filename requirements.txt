@@ -10,7 +10,30 @@ heroku3
 pillow
 sgmllib3k
 tgcrypto
-
-
+# Extra deps from plugin errors
+apscheduler
+pySmartDL
+aiohttp
+wget
+emoji
+html-telegraph-poster
+beautifulsoup4
+feedparser
+rarfile
+pytz
+gTTS
+justwatch
+newspaper3k
+search-engine-parser
+telegraph
+qrcode
+gdshortener
+pybase64
+countryinfo
+speedtest-cli
+psutil
+lottie
+selenium
+pyfiglet
 
 
