@@ -9,6 +9,7 @@ pyrogram==2.0.106
 heroku3
 pillow
 sgmllib3k
+tgcrypto
 
 
 
